@@ -1,0 +1,14 @@
+{
+	"name" : "babulin/devlog",
+	"description" : "php output dev log",
+	"authors" : [{
+			"name" : "ahlin",
+			"email" : "787193801@qq.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Log\\" : "src/Log"
+		}
+	}
+}
