@@ -1,11 +1,17 @@
 {
 	"name" : "babulin/devlog",
 	"description" : "php output dev log",
+	"license" : "MIT",
+	"type" : "library",
 	"authors" : [{
 			"name" : "ahlin",
 			"email" : "787193801@qq.com"
 		}
 	],
+	"require" : {
+		"php" : ">=5.6"
+	},
+	"minimum-stability" : "stable",
 	"autoload" : {
 		"psr-4" : {
 			"Log\\" : "src/Log"
