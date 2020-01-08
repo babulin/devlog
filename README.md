@@ -13,4 +13,7 @@ php 开发日志
 # 使用
 ```
 Log::debug("订单日志输出","_order");
+Log::info("订单日志输出","_order");
+Log::warn("订单日志输出","_order");
+Log::error("订单日志输出","_order");
 ```
