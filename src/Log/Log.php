@@ -1,6 +1,8 @@
 <?php 
 namespace Log;
 use Illuminate\Database\Capsule\Manager as DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
 /**
  * 单例模式
  * @author EDZ
@@ -35,6 +37,14 @@ class Log{
 			// 启动Eloquent （如果只使用查询构造器，这个可以注释）
 			self::$db->bootEloquent();
 		}
+		
+		//判断是否有该表
+		try {
+			//DB::table('sss')->get();
+		} catch (\Exception $e) {
+			//echo $e->getMessage();
+		}
+		
 		return self::$db;
 	}
 	
